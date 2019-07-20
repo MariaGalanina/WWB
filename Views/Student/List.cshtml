@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Students list";
+    ViewBag.Title = "Список студентов";
 }
 
     <html>
@@ -30,7 +30,7 @@
                         <td><p>@b.Otch</p></td>
                         <td><p>@b.Rating</p></td>
                         <td><p>@b.Diplom</p></td>
-                        <td><p><a href="/Home/Buy/@b.Id">Просмотр профиля</a></p></td>
+                        <td><p><a href="/Student/View/@b.Id">Профиль</a></p></td>
                     </tr>
                 }
             </table>

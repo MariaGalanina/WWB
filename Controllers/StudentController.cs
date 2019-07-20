@@ -11,11 +11,18 @@ namespace WebApplication.Controllers
     {
         StudentContext db = new StudentContext();
         // GET: Student
-        public ActionResult Index()
+        public ActionResult List()
         {
             IEnumerable<Student> students = db.Students;
             ViewBag.Students = students;
             return View();
+        }
+
+        [HttpGet]
+        public ActionResult View(int id)
+        {
+            Student student = db.Students.Find(id);
+            return View(student);
         }
     }
 }

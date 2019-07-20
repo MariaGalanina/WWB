@@ -1,0 +1,64 @@
+﻿@model WebApplication.Models.Student
+
+@{
+    ViewBag.Title = "Карточка студента";
+}
+
+<h2>Карточка студента</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Snils)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Snils)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Otch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Otch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Diplom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Diplom)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "List")
+</p>
