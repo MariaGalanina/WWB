@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Students list";
+}
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Список студентов</title>
+    </head>
+    <body>
+        <div>
+            <h3>База данных студентов</h3>
+            <table>
+                <tr>
+                    <td><p>СНИЛС</p></td>
+                    <td><p>Фамилия</p></td>
+                    <td><p>Имя</p></td>
+                    <td><p>Отчество</p></td>
+                    <td><p>Рейтинг</p></td>
+                    <td><p>Диплом</p></td>
+                    <td></td>
+                </tr>
+                @foreach (var b in ViewBag.Students)
+                {
+                    <tr>
+                        <td><p>@b.Snils</p></td>
+                        <td><p>@b.Surname</p></td>
+                        <td><p>@b.Name</p></td>
+                        <td><p>@b.Otch</p></td>
+                        <td><p>@b.Rating</p></td>
+                        <td><p>@b.Diplom</p></td>
+                        <td><p><a href="/Home/Buy/@b.Id">Просмотр профиля</a></p></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </body>
+    </html>
+
