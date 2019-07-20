@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
@@ -9,11 +10,17 @@ namespace WebApplication.Models
     public class Student
     {
         public int Id { get; set; }
+        [Display(Name = "СНИЛС")]
         public string Snils { get; set; }
+        [Display(Name = "Имя")]
         public string Name { get; set; }
+        [Display(Name = "Фамилия")]
         public string Surname { get; set; }
+        [Display(Name = "Отчество")]
         public string Otch { get; set; }
+        [Display(Name = "Рейтинг")]
         public string Rating { get; set; }
+        [Display(Name = "Диплом")]
         public string Diplom { get; set; }
     }
 
