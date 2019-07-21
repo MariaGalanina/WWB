@@ -8,8 +8,7 @@ using System.Web.Mvc;
 namespace WebApplication.Models
 {
     public class Region
-    {
-        [HiddenInput(DisplayValue = false)] 
+    { 
         public int Id { get; set; }
         [Display(Name = "Наименование региона")]
         public string Name { get; set; }
@@ -17,9 +16,6 @@ namespace WebApplication.Models
     }
     public class RegionContext:DbContext
     {
-        public RegionContext()
-            : base("DefaultConnection")
-        { }
         public DbSet<Region> Regions { get; set; }
     }
     public class RegionDbInitializer : DropCreateDatabaseAlways<RegionContext>

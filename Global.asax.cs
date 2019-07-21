@@ -19,10 +19,11 @@ namespace WebApplication
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             Database.SetInitializer(new StudentDbInitializer());
+            Database.SetInitializer(new SpecialityDbInitializer());
             Database.SetInitializer(new CompetenceDbInitializer());
             Database.SetInitializer(new ContragentDbInitializer());
             Database.SetInitializer(new RegionDbInitializer());
-            Database.SetInitializer(new SpecialityDbInitializer());
+
         }
     }
 }

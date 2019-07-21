@@ -9,7 +9,6 @@ namespace WebApplication.Models
 {
     public class Competence
     {
-        [HiddenInput(DisplayValue = false)]
         public int Id { get; set; }
         [Display(Name = "Наименование компетенции")]
         public string Name { get; set; }
@@ -18,10 +17,9 @@ namespace WebApplication.Models
     }
     public class CompetenceContext : DbContext
     {
-        public CompetenceContext()
-            : base("DefaultConnection")
-        { }
         public DbSet<Competence> Competences { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication.Models.Speciality> Specialities { get; set; }
     }
 
     public class AcceptComp : DbContext
@@ -34,12 +32,12 @@ namespace WebApplication.Models
     {
         protected override void Seed(CompetenceContext db)
         {
-            db.Competences.Add(new Competence { Name = "Компетенция 1" });
-            db.Competences.Add(new Competence { Name = "Компетенция 2" });
-            db.Competences.Add(new Competence { Name = "Компетенция 3" });
-            db.Competences.Add(new Competence { Name = "Компетенция 4" });
-            db.Competences.Add(new Competence { Name = "Компетенция 5" });
-            db.Competences.Add(new Competence { Name = "Компетенция 6" });
+            db.Competences.Add(new Competence { Name = "Обрабатывать статический информационный контент"});
+            db.Competences.Add(new Competence { Name = "Обрабатывать динамический информационный контент"});
+            db.Competences.Add(new Competence { Name = "Осуществлять подготовку оборудования к работе"});
+            db.Competences.Add(new Competence { Name = "Разрабатывать и вести проектную ии техническую документацию"});
+            db.Competences.Add(new Competence { Name = "Участвовать в измерении и контроле качества продуктов"});
+            db.Competences.Add(new Competence { Name = "Обеспечивать содержание проектных операций"});
 
 
             base.Seed(db);

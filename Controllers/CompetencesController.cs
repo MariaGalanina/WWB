@@ -17,7 +17,6 @@ namespace WebApplication.Controllers
         // GET: Competences
         public ActionResult Index()
         {
-            //var comp = db.Competences.Include(p => p.Speciality);
             return View(db.Competences.ToList());
         }
 

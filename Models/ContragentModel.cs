@@ -8,8 +8,7 @@ using System.Web.Mvc;
 namespace WebApplication.Models
 {
     public class Contragent
-    {
-        [HiddenInput(DisplayValue = false)] 
+    { 
         public int Id { get; set; }
         [Display(Name = "Регион")]
         public int RegionId { get; set; }
@@ -38,8 +37,6 @@ namespace WebApplication.Models
     }
     public class ContragentContext:DbContext
     {
-        public ContragentContext(): base("DefaultConnection")
-        { }
         public DbSet<Contragent> Contragents { get; set; }
     }
     public class ContragentDbInitializer : DropCreateDatabaseAlways<ContragentContext>
