@@ -18,9 +18,11 @@ namespace WebApplication.Models
     }
     public class SpecialityContext:DbContext
     {
+        public SpecialityContext():base("DefaultConnection")
+        { }
         public DbSet<Speciality> Specialitys { get; set; }
     }
-    public class SpecialitDbInitializer : DropCreateDatabaseAlways<SpecialityContext>
+    public class SpecialityDbInitializer : DropCreateDatabaseAlways<SpecialityContext>
     {
         protected override void Seed(SpecialityContext db)
         {

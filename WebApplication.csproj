@@ -168,13 +168,20 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContragentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RegionsController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Controllers\SpecialitiesController.cs" />
+    <Compile Include="Models\CompetenceModel.cs" />
+    <Compile Include="Controllers\CompetencesController.cs" />
+    <Compile Include="Models\ContragentModel.cs" />
+    <Compile Include="Models\RegionModel.cs" />
     <Compile Include="Models\SpecialityModel.cs" />
     <Compile Include="Models\StudentModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -247,9 +254,29 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Student\List.cshtml" />
     <Content Include="Views\Student\View.cshtml" />
+    <Content Include="Views\Specialities\Create.cshtml" />
+    <Content Include="Views\Specialities\Delete.cshtml" />
+    <Content Include="Views\Specialities\Details.cshtml" />
+    <Content Include="Views\Specialities\Edit.cshtml" />
+    <Content Include="Views\Specialities\Index.cshtml" />
+    <Content Include="Views\Competences\Create.cshtml" />
+    <Content Include="Views\Competences\Delete.cshtml" />
+    <Content Include="Views\Competences\Details.cshtml" />
+    <Content Include="Views\Competences\Edit.cshtml" />
+    <Content Include="Views\Competences\Index.cshtml" />
+    <Content Include="Views\Regions\Create.cshtml" />
+    <Content Include="Views\Regions\Delete.cshtml" />
+    <Content Include="Views\Regions\Details.cshtml" />
+    <Content Include="Views\Regions\Edit.cshtml" />
+    <Content Include="Views\Regions\Index.cshtml" />
+    <Content Include="Views\Contragents\Create.cshtml" />
+    <Content Include="Views\Contragents\Delete.cshtml" />
+    <Content Include="Views\Contragents\Details.cshtml" />
+    <Content Include="Views\Contragents\Edit.cshtml" />
+    <Content Include="Views\Contragents\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Speciality\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -1,0 +1,106 @@
+﻿@model WebApplication.Models.Contragent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Contragent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RegionId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegionId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OGRN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OGRN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KPP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KPP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OKPO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OKPO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateRegistr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateRegistr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Head)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Head)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Site)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Site)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

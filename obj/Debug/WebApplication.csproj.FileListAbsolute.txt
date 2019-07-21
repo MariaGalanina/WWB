@@ -344,6 +344,5 @@ D:\site\WWB\bin\ru\EntityFramework.SqlServer.resources.dll
 D:\site\WWB\bin\ru\Microsoft.AspNet.Identity.Core.resources.dll
 D:\site\WWB\bin\ru\Microsoft.AspNet.Identity.Owin.resources.dll
 D:\site\WWB\bin\ru\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-D:\site\WWB\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
 D:\site\WWB\obj\Debug\WebApplication.dll
 D:\site\WWB\obj\Debug\WebApplication.pdb

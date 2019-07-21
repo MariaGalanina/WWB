@@ -1,0 +1,26 @@
+﻿@model WebApplication.Models.Competence
+
+@{
+    ViewBag.Title = "Детали компетенции";
+}
+
+<h2>Детали компетенции</h2>
+
+<div>
+    <h4>Competence</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Вернуться к списку компетенций", "Index")
+</p>
