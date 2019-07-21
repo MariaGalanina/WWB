@@ -1,10 +1,12 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    /*background-image: url("../img/33.png");*/
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    color: #fff;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -53,3 +55,11 @@ textarea {
     cursor: pointer;
     outline: none;
 }
+a {
+    color: #fff;
+    padding: 10px;
+}
+    a:hover{color:#00ffff}
+    footer{
+        color:#fff;
+    }
