@@ -1,7 +1,7 @@
 ﻿@model WebApplication.Models.Competence
 
 @{
-    ViewBag.Title = "Подробнее о компетенции";
+    ViewBag.Title = "Детали компетенции";
 }
 
 <h2>Детали компетенции</h2>
@@ -20,6 +20,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Редактировать", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Вернуться к списку", "Index")
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Назад к списку", "Index")
 </p>

@@ -13,7 +13,8 @@ namespace WebApplication.Models
         public int Id { get; set; }
         [Display(Name = "Наименование компетенции")]
         public string Name { get; set; }
-       
+        public int? SpecialityId { get; set; }
+        public Speciality Speciality { get; set; }
     }
     public class CompetenceContext : DbContext
     {
@@ -22,6 +23,13 @@ namespace WebApplication.Models
         { }
         public DbSet<Competence> Competences { get; set; }
     }
+
+    public class AcceptComp : DbContext
+    {
+        public DbSet<Competence> Competences { get; set; }
+        public DbSet<Speciality> Specialities { get; set; }
+    }
+
     public class CompetenceDbInitializer : DropCreateDatabaseAlways<CompetenceContext>
     {
         protected override void Seed(CompetenceContext db)

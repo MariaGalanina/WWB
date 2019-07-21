@@ -15,6 +15,11 @@ namespace WebApplication.Models
         public string Name { get; set; }
         [Display(Name="Код специальности")]
         public string Kod { get; set; }
+        public ICollection<Competence> Competences { get; set; }
+        public Speciality()
+        {
+            Competences = new List<Competence>();
+        }
     }
     public class SpecialityContext:DbContext
     {
