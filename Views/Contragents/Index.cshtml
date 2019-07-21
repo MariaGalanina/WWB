@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<WebApplication.Models.Contragent>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Список наших партнеров";
 }
 
-<h2>Index</h2>
+<h2>Список партнеров</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Добавить нового", "Create")
 </p>
 <table class="table">
     <tr>
@@ -83,9 +83,9 @@
             @Html.DisplayFor(modelItem => item.Site)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Редактировать", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Профиль", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.Id })
         </td>
     </tr>
 }
