@@ -18,7 +18,7 @@ namespace WebApplication.Controllers
         public ActionResult Index()
         {
 
-            var contragents = db.Contragents.Include(o => o.Region);
+            //var contragents = db.Contragents.Include(o => o.Region);
 
             return View(db.Contragents.ToList());
         }

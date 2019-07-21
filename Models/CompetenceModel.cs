@@ -26,8 +26,14 @@ namespace WebApplication.Models
     {
         protected override void Seed(CompetenceContext db)
         {
-            db.Competences.Add(new Competence{ Name = "Прикладная информатика" });
-            
+            db.Competences.Add(new Competence { Name = "Компетенция 1" });
+            db.Competences.Add(new Competence { Name = "Компетенция 2" });
+            db.Competences.Add(new Competence { Name = "Компетенция 3" });
+            db.Competences.Add(new Competence { Name = "Компетенция 4" });
+            db.Competences.Add(new Competence { Name = "Компетенция 5" });
+            db.Competences.Add(new Competence { Name = "Компетенция 6" });
+
+
             base.Seed(db);
         }
     }

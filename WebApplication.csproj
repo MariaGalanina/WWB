@@ -251,11 +251,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Student\List.cshtml" />
     <Content Include="Views\Student\View.cshtml" />
-    <Content Include="Views\Specialities\Create.cshtml" />
-    <Content Include="Views\Specialities\Delete.cshtml" />
-    <Content Include="Views\Specialities\Details.cshtml" />
-    <Content Include="Views\Specialities\Edit.cshtml" />
-    <Content Include="Views\Specialities\Index.cshtml" />
     <Content Include="Views\Competences\Create.cshtml" />
     <Content Include="Views\Competences\Delete.cshtml" />
     <Content Include="Views\Competences\Details.cshtml" />
@@ -274,6 +269,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Specialities\Index.cshtml" />
+    <Content Include="Views\Specialities\Details.cshtml" />
+    <Content Include="Views\Specialities\Create.cshtml" />
+    <Content Include="Views\Specialities\Edit.cshtml" />
+    <Content Include="Views\Specialities\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />

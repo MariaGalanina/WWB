@@ -26,7 +26,7 @@ namespace WebApplication.Models
         [Display(Name = "ОКПО")]
         public string OKPO { get; set; }
         [Display(Name = "Дата регистрации")]
-        public DateTime DateRegistr { get; set; }
+        public string DateRegistr { get; set; }
         [Display(Name = "Руководитель")]
         public string Head { get; set; }
         [Display(Name = "Телефон")]
@@ -35,7 +35,6 @@ namespace WebApplication.Models
         public string Email { get; set; }
         [Display(Name = "Сайт")]
         public string Site { get; set; }
-        public Region Region { get; set; }
     }
     public class ContragentContext:DbContext
     {
@@ -43,13 +42,13 @@ namespace WebApplication.Models
         { }
         public DbSet<Contragent> Contragents { get; set; }
     }
-    //public class ContragentDbInitializer : DropCreateDatabaseAlways<SpecialityContext>
-    //{
-    //    protected override void Seed(ContragentContext db)
-    //    {
-    //        db.Contragents.Add(new Contragent { Name = "ННГУ им Н. И. Лобачевского" , RegionId=1});
+    public class ContragentDbInitializer : DropCreateDatabaseAlways<ContragentContext>
+    {
+        protected override void Seed(ContragentContext db)
+        {
+            db.Contragents.Add(new Contragent { Name = "ННГУ им Н. И. Лобачевского"});
             
-    //        base.Seed(db);
-    //    }
-    //}
+            base.Seed(db);
+        }
+    }
 }
